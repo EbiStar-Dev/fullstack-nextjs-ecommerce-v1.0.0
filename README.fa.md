@@ -1,6 +1,6 @@
-# فروشگاه اینترنتی فول‌استک
+<div dir="rtl">
 
-[🇬🇧 English](./README.md) | 🇮🇷 فارسی
+# فروشگاه اینترنتی فول‌استک
 
 یک اپلیکیشن فروشگاه اینترنتی فول‌استک که با **Next.js، TypeScript، Tailwind CSS، PostgreSQL و Prisma** ساخته می‌شود.
 
@@ -40,39 +40,38 @@
 
 ---
 
-## 🛠 تکنولوژی‌های استفاده‌شده
+## 🛠تکنولوژی‌های استفاده‌شده
+
 
 ### Frontend
 
-* Next.js
-* React
-* TypeScript
-* Tailwind CSS
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge\&logo=next.js\&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge\&logo=tailwindcss\&logoColor=white)
 
 ### Backend
 
-* Node.js
-* NestJS
-* REST API
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=node.js\&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge\&logo=nestjs\&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-005571?style=for-the-badge)
 
 ### Database
 
-* PostgreSQL
-* Prisma ORM
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge\&logo=postgresql\&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge\&logo=prisma\&logoColor=white)
 
-### ابزارها
+### Tools
 
-* Git
-* GitHub
-* Docker
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
 
----
 
-## 📁 ساختار پروژه
+</div>
 
 ```text
 .
-
 ├── app
 │   ├── (auth)
 │   │   ├── account
@@ -172,6 +171,8 @@
 └── tsconfig.json
 ```
 
+<div dir="rtl">
+
 ساختار پروژه به‌گونه‌ای طراحی شده است که **مسیرها، قابلیت‌ها، منطق سمت سرور و کامپوننت‌های مشترک** از یکدیگر جدا باشند تا کد پروژه منظم‌تر و توسعه و گسترش آن در آینده ساده‌تر باشد.
 
 ---
@@ -235,39 +236,63 @@
 
 مخزن پروژه را Clone کنید:
 
+</div>
+
 ```bash
 git clone https://github.com/EbiStar-Dev/fullstack-nextjs-ecommerce-v1.0.0.git
 ```
 
+<div dir="rtl">
+
 وارد پوشه پروژه شوید:
+
+</div>
 
 ```bash
 cd fullstack-nextjs-ecommerce-v1.0.0
 ```
 
+<div dir="rtl">
+
 وابستگی‌ها را نصب کنید:
+
+</div>
 
 ```bash
 npm install
 ```
 
+<div dir="rtl">
+
 فایل متغیرهای محیطی را ایجاد کنید:
+
+</div>
 
 ```bash
 cp .env.example .env
 ```
 
+<div dir="rtl">
+
 سرور توسعه را اجرا کنید:
+
+</div>
 
 ```bash
 npm run dev
 ```
 
+<div dir="rtl">
+
 سپس در مرورگر باز کنید:
+
+</div>
 
 ```text
 http://localhost:3000
 ```
+
+<div dir="rtl">
 
 ---
 
@@ -281,8 +306,10 @@ http://localhost:3000
 
 ## 👨‍💻 توسعه‌دهنده
 
-**Ebrahim Darabi**
+**EbStar-Dev**
 
 * GitHub: https://github.com/EbiStar-Dev
 * LinkedIn: https://www.linkedin.com/in/ebrahim-darabi-dev/
 * Email: [ebistar.web@gmail.com](mailto:ebistar.web@gmail.com)
+
+</div>
