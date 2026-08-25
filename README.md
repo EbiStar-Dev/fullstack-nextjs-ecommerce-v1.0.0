@@ -1,5 +1,7 @@
 # Full-Stack E-Commerce
 
+🇬🇧 English | [🇮🇷 فارسی](./README.fa.md)
+
 A full-stack e-commerce web application built with **Next.js, TypeScript, Tailwind CSS, PostgreSQL, and Prisma**.
 
 This project is being developed as a real-world application to practice and demonstrate full-stack development, from user interfaces and business logic to database management and API integration.
@@ -42,27 +44,28 @@ This project is being developed as a real-world application to practice and demo
 
 ### Frontend
 
-* Next.js
-* React
-* TypeScript
-* Tailwind CSS
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge\&logo=next.js\&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge\&logo=tailwindcss\&logoColor=white)
 
 ### Backend
 
-* Node.js
-* NestJS
-* REST API
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=node.js\&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge\&logo=nestjs\&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-005571?style=for-the-badge)
 
 ### Database
 
-* PostgreSQL
-* Prisma ORM
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge\&logo=postgresql\&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge\&logo=prisma\&logoColor=white)
 
 ### Tools
 
-* Git
-* GitHub
-* Docker
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
+
 
 ---
 
