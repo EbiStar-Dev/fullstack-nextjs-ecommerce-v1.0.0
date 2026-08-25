@@ -1,0 +1,325 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "EbiStar",
+      "password": "12345",
+      "email": "ebistar.web@gmail.com",
+      "role": "admin",
+      "full_name": "ابراهیم ستاره",
+      "phone": "09123456789",
+      "address": "تهران، خیابان آزادی، پلاک ۱۰",
+      "created_at": "2026-08-24",
+      "updated_at": ""
+    },
+    {
+      "id": 2,
+      "username": "sara_m",
+      "password": "securePass123",
+      "email": "sara.m@example.com",
+      "role": "customer",
+      "full_name": "سارا محمدی",
+      "phone": "09198765432",
+      "address": "اصفهان، میدان نقش جهان، کوچه گل‌ها، پلاک ۵",
+      "created_at": "2026-08-20",
+      "updated_at": "2026-08-22"
+    },
+    {
+      "id": 3,
+      "username": "ali_reza",
+      "password": "aliPass99",
+      "email": "ali.reza@example.com",
+      "role": "customer",
+      "full_name": "علی رضایی",
+      "phone": "09351112233",
+      "address": "مشهد، بلوار وکیل‌آباد، مجتمع تجاری الماس، واحد ۲۰۴",
+      "created_at": "2026-08-15",
+      "updated_at": ""
+    },
+    {
+      "id": 4,
+      "username": "mina_k",
+      "password": "mina123",
+      "email": "mina.k@example.com",
+      "role": "customer",
+      "full_name": "مینا کریمی",
+      "phone": "",
+      "address": "",
+      "created_at": "2026-08-23",
+      "updated_at": ""
+    },
+    {
+      "id": 5,
+      "username": "test_user",
+      "password": "test123",
+      "email": "test@example.com",
+      "role": "customer",
+      "full_name": "کاربر تست",
+      "phone": "",
+      "address": "",
+      "created_at": "2026-08-24",
+      "updated_at": ""
+    }
+  ],
+  "categories": [
+    { "id": 101, "name": "کفش مردانه", "slug": "men-shoes", "parent_id": null },
+    { "id": 102, "name": "کفش زنانه", "slug": "women-shoes", "parent_id": null },
+    { "id": 103, "name": "کتانی ورزشی", "slug": "sport-sneakers", "parent_id": 101 },
+    { "id": 104, "name": "کفش رسمی", "slug": "formal-shoes", "parent_id": 101 },
+    { "id": 105, "name": "پوشاک مردانه", "slug": "men-clothing", "parent_id": null },
+    { "id": 106, "name": "اکسسوری", "slug": "accessories", "parent_id": null },
+    { "id": 107, "name": "جوراب", "slug": "socks", "parent_id": 106 }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "slug": "white-sport-sneaker",
+      "name": "کتانی اسپرت سفید",
+      "price": 2450000,
+      "currency": "تومان",
+      "short_description": "کتانی اسپرت سبک و راحت با طراحی مینیمال.",
+      "full_description": "کتانی اسپرت سفید با طراحی ساده و کاربردی، انتخابی مناسب برای استفاده روزمره است.",
+      "category_id": 103,
+      "images": [
+        "../../assets/images/products/shoe-01.jpg",
+        "../../assets/images/products/shoe-01-2.jpg"
+      ],
+      "rating": { "stars": 5, "count": 24 },
+      "badge": "جدید",
+      "options": {
+        "colors": [
+          { "name": "سفید", "code": "white", "active": true },
+          { "name": "مشکی", "code": "black", "active": false }
+        ],
+        "sizes": [38, 39, 40, 41, 42]
+      },
+      "specifications": [
+        { "label": "جنس رویه", "value": "پارچه" },
+        { "label": "زیره", "value": "لاستیک" }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "black-casual-sneaker",
+      "name": "کتانی مشکی روزمره",
+      "price": 2890000,
+      "currency": "تومان",
+      "short_description": "طراحی شیک و مقاوم برای استفاده طولانی.",
+      "full_description": "این کتانی با رنگ مشکی جذاب، مناسب قرارهای نیمه‌رسمی و استفاده روزانه است.",
+      "category_id": 103,
+      "images": ["../../assets/images/products/shoe-02.jpg"],
+      "rating": { "stars": 4, "count": 12 },
+      "badge": "پرفروش",
+      "options": {
+        "colors": [{ "name": "مشکی", "code": "black", "active": true }],
+        "sizes": [40, 41, 42, 43, 44]
+      },
+      "specifications": [
+        { "label": "جنس رویه", "value": "چرم مصنوعی" },
+        { "label": "زیره", "value": "پلی‌اورتان" }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "gray-white-sneaker",
+      "name": "کتانی سفید و طوسی",
+      "price": 3150000,
+      "currency": "تومان",
+      "short_description": "ترکیب رنگ مدرن و کفی طبی.",
+      "full_description": "مناسب برای پیاده‌روی‌های طولانی با کفی ارگونومیک.",
+      "category_id": 103,
+      "images": ["../../assets/images/products/shoe-03.jpg"],
+      "rating": { "stars": 4.5, "count": 8 },
+      "badge": null,
+      "options": {
+        "colors": [{ "name": "طوسی/سفید", "code": "gray-white", "active": true }],
+        "sizes": [39, 40, 41, 42]
+      },
+      "specifications": [
+        { "label": "ویژگی خاص", "value": "کفی طبی" }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "running-pro-shoe",
+      "name": "کتانی رانینگ حرفه‌ای",
+      "price": 3450000,
+      "currency": "تومان",
+      "short_description": "مخصوص دویدن و فعالیت‌های سنگین ورزشی.",
+      "full_description": "با تکنولوژی تنفس‌پذیری بالا و جذب ضربه عالی.",
+      "category_id": 103,
+      "images": ["../../assets/images/products/shoe-04.jpg"],
+      "rating": { "stars": 5, "count": 30 },
+      "badge": "ویژه ورزشکاران",
+      "options": {
+        "colors": [
+          { "name": "قرمز/مشکی", "code": "red-black", "active": true },
+          { "name": "آبی/سفید", "code": "blue-white", "active": false }
+        ],
+        "sizes": [40, 41, 42, 43, 44, 45]
+      },
+      "specifications": [
+        { "label": "کاربری", "value": "دویدن" },
+        { "label": "وزن", "value": "سبک" }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "classic-white-leather",
+      "name": "کتانی سفید کلاسیک چرم",
+      "price": 2290000,
+      "currency": "تومان",
+      "short_description": "استایل کلاسیک همیشه مد.",
+      "full_description": "ساخته شده از چرم طبیعی با دوخت دستی.",
+      "category_id": 103,
+      "images": ["../../assets/images/products/shoe-05.jpg"],
+      "rating": { "stars": 4, "count": 15 },
+      "badge": null,
+      "options": {
+        "colors": [{ "name": "سفید", "code": "white", "active": true }],
+        "sizes": [38, 39, 40, 41, 42, 43]
+      },
+      "specifications": [
+        { "label": "جنس", "value": "چرم طبیعی" }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "formal-brown-shoe",
+      "name": "کفش رسمی قهوه‌ای",
+      "price": 4100000,
+      "currency": "تومان",
+      "short_description": "مناسب جلسات کاری و مهمانی‌های رسمی.",
+      "full_description": "طراحی ایتالیایی با چرم درجه یک.",
+      "category_id": 104,
+      "images": ["../../assets/images/products/shoe-06.jpg"],
+      "rating": { "stars": 5, "count": 5 },
+      "badge": "لوکس",
+      "options": {
+        "colors": [{ "name": "قهوه‌ای", "code": "brown", "active": true }],
+        "sizes": [40, 41, 42, 43]
+      },
+      "specifications": [
+        { "label": "سبک", "value": "رسمی" }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "women-sport-pink",
+      "name": "کتانی ورزشی زنانه صورتی",
+      "price": 1950000,
+      "currency": "تومان",
+      "short_description": "طراحی ظریف و رنگ‌بندی شاد.",
+      "full_description": "مناسب باشگاه و پیاده‌روی بانوان.",
+      "category_id": 102,
+      "images": ["../../assets/images/products/shoe-07.jpg"],
+      "rating": { "stars": 4.5, "count": 18 },
+      "badge": "جدید",
+      "options": {
+        "colors": [{ "name": "صورتی", "code": "pink", "active": true }],
+        "sizes": [36, 37, 38, 39, 40]
+      },
+      "specifications": [
+        { "label": "جنس", "value": "مش" }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "cotton-tshirt-white",
+      "name": "تی‌شرت نخی سفید",
+      "price": 450000,
+      "currency": "تومان",
+      "short_description": "نخ پنبه صد در صد خنک.",
+      "full_description": "تی‌شرت یقه گرد ساده، مناسب زیر کت یا استفاده تنها.",
+      "category_id": 105,
+      "images": ["../../assets/images/products/cloth-01.jpg"],
+      "rating": { "stars": 4, "count": 40 },
+      "badge": null,
+      "options": {
+        "colors": [{ "name": "سفید", "code": "white", "active": true }],
+        "sizes": ["S", "M", "L", "XL"]
+      },
+      "specifications": [
+        { "label": "جنس", "value": "نخ پنبه" }
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "denim-jacket-blue",
+      "name": "کت جین آبی",
+      "price": 1800000,
+      "currency": "تومان",
+      "short_description": "استایل کژوال و جوان‌پسند.",
+      "full_description": "کت جین با شست‌وشوی سنگین و دکمه‌های فلزی.",
+      "category_id": 105,
+      "images": ["../../assets/images/products/cloth-02.jpg"],
+      "rating": { "stars": 4.5, "count": 10 },
+      "badge": "تخفیف دار",
+      "options": {
+        "colors": [{ "name": "آبی روشن", "code": "light-blue", "active": true }],
+        "sizes": ["M", "L", "XL"]
+      },
+      "specifications": [
+        { "label": "فصل", "value": "پاییز/بهار" }
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "sport-socks-pack",
+      "name": "بسته ۳ تایی جوراب ورزشی",
+      "price": 120000,
+      "currency": "تومان",
+      "short_description": "ضد بو و تعریق.",
+      "full_description": "جوراب‌های ساق‌دار مناسب ورزش.",
+      "category_id": 107,
+      "images": ["../../assets/images/products/acc-01.jpg"],
+      "rating": { "stars": 5, "count": 50 },
+      "badge": "اقتصادی",
+      "options": {
+        "colors": [{ "name": "مشکی/سفید/طوسی", "code": "mix", "active": true }],
+        "sizes": ["40-44"]
+      },
+      "specifications": []
+    },
+    {
+      "id": 11,
+      "slug": "leather-belt-black",
+      "name": "کمربند چرم مشکی",
+      "price": 650000,
+      "currency": "تومان",
+      "short_description": "سگک فلزی ضد زنگ.",
+      "full_description": "کمربند رسمی با چرم طبیعی گاوی.",
+      "category_id": 106,
+      "images": ["../../assets/images/products/acc-02.jpg"],
+      "rating": { "stars": 4, "count": 7 },
+      "badge": null,
+      "options": {
+        "colors": [{ "name": "مشکی", "code": "black", "active": true }],
+        "sizes": ["90cm", "100cm", "110cm"]
+      },
+      "specifications": [
+        { "label": "جنس سگک", "value": "استیل" }
+      ]
+    },
+    {
+      "id": 12,
+      "slug": "canvas-backpack-gray",
+      "name": "کوله پشتی کanvas طوسی",
+      "price": 980000,
+      "currency": "تومان",
+      "short_description": "جادار و مقاوم برای دانشگاه و سفر.",
+      "full_description": "دارای محفظه لپ‌تاپ و جیب‌های متعدد.",
+      "category_id": 106,
+      "images": ["../../assets/images/products/acc-03.jpg"],
+      "rating": { "stars": 4.5, "count": 22 },
+      "badge": "محبوب",
+      "options": {
+        "colors": [{ "name": "طوسی", "code": "gray", "active": true }],
+        "sizes": ["Free Size"]
+      },
+      "specifications": [
+        { "label": "ظرفیت", "value": "20 لیتر" }
+      ]
+    }
+  ]
+}
