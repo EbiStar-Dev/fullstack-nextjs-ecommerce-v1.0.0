@@ -1,6 +1,7 @@
 <div dir="rtl">
 
 # فروشگاه اینترنتی فول‌استک
+[🇬🇧 English](./README.md) | 🇮🇷 فارسی
 
 یک اپلیکیشن فروشگاه اینترنتی فول‌استک که با **Next.js، TypeScript، Tailwind CSS، PostgreSQL و Prisma** ساخته می‌شود.
 
