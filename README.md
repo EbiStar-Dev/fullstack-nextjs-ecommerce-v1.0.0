@@ -1,5 +1,7 @@
 # Full-Stack E-Commerce
 
+🇬🇧 English | [🇮🇷 فارسی](./README.fa.md)
+
 A full-stack e-commerce web application built with **Next.js, TypeScript, Tailwind CSS, PostgreSQL, and Prisma**.
 
 This project is being developed as a real-world application to practice and demonstrate full-stack development, from user interfaces and business logic to database management and API integration.
