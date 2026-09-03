@@ -1,11 +1,13 @@
+
+
 export default function Header() {
   return (
     <header className="dashboard-header">
       <div className="dashboard-header-title">
         <button
           type="button"
-          className="sidebar-toggle"
-          id="sidebar-toggle"
+          className="sidebar-close"
+          id="sidebar-close"
           aria-label="باز کردن منو"
         >
           <svg className="icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -14,11 +16,6 @@ export default function Header() {
             <path d="M4 18h16"></path>
           </svg>
         </button>
-
-        <div>
-          <h1>داشبورد</h1>
-          <p>خلاصه وضعیت فروشگاه</p>
-        </div>
       </div>
 
       <div className="dashboard-header-actions">

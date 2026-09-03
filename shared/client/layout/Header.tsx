@@ -5,7 +5,7 @@ export default function Header() {
         <div className="store-header-inner">
 
             <a href="index.html" className="store-logo">
-                فروشگاه
+                StarMode
             </a>
 
             <nav className="store-nav" aria-label="منوی اصلی">

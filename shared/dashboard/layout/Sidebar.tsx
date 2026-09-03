@@ -1,85 +1,75 @@
-export default function Sidebare() {
+'use client'
+import Link from "next/link";
+import { CloseIcon } from "../components/icons";
+import { sidebarLinks } from "../config/sidebarLinks";
+import { usePathname } from "next/navigation";
+
+export default function Sidebar() {
+  const pathname = usePathname();
+
   return (
-    <aside className="dashboard-sidebar" id="dashboard-sidebar">
-      <div className="sidebar-brand">
-        <a href="index.html" className="sidebar-logo">
-          {" "}
-          فروشگاه{" "}
-        </a>
+    <aside className="dashboard-sidebar shrink-0 px-4 py-6" id="dashboard-sidebar">
+      <div className="sidebar-brand flex items-center justify-between px-3 pb-6">
+        <Link href="/" className="sidebar-logo font-bold text-xl">
+          Star Mode
+        </Link>
 
         <button
           type="button"
-          className="sidebar-close"
+          className="sidebar-close items-center justify-center p-2"
           id="sidebar-close"
           aria-label="بستن منو"
         >
-          <svg className="icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M18 6 6 18"></path>
-            <path d="m6 6 12 12"></path>
-          </svg>
+          <CloseIcon />
         </button>
       </div>
 
-      <nav className="sidebar-nav" aria-label="منوی مدیریت">
-        <a href="index.html" className="sidebar-link sidebar-link-active">
-          <span>داشبورد</span>
-        </a>
+      <nav className="mt-4 flex flex-col gap-1" aria-label="منوی مدیریت">
+        {sidebarLinks.map((link, index) => {
+          if ('section' in link) {
+            return (
+              <div key={index} className="mt-6">
+                <h3 className="sidebar-section-title uppercase tracking-wide px-3 mb-2 text-xs font-semibold">
+                  {link.section}
+                </h3>
+                
+                <div className="flex flex-col gap-1">
+                  {link.items.map((item, itemIndex) => {
+                    const isActive = pathname === item.href || pathname.startsWith(item.href + "/");
+                    
+                    return (
+                      <Link
+                        key={itemIndex}
+                        href={item.href}
+                        className={`sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 ${
+                          isActive ? 'sidebar-link-active' : ''
+                        }`}
+                      >
+                        <item.icon />
+                        <span className="text-sm">{item.label}</span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          }
 
-        <div className="sidebar-section">
-          <span className="sidebar-section-title">فروشگاه</span>
+          const isActive = pathname === link.href;
 
-          <a href="/dashboard/products" className="sidebar-link">
-            <span>محصولات</span>
-          </a>
-
-          <a href="/dashboard/orders" className="sidebar-link">
-            <span>سفارشات</span>
-          </a>
-
-          <a href="/dashboard/customers" className="sidebar-link">
-            <span>مشتریان</span>
-          </a>
-        </div>
-
-        <div className="sidebar-section">
-          <span className="sidebar-section-title">بازاریابی</span>
-
-          <a href="/dashboard/marketing/coupons" className="sidebar-link">
-            <span>کدهای تخفیف</span>
-          </a>
-
-          <a href="/dashboard/marketing/newsletters" className="sidebar-link">
-            <span>خبرنامه</span>
-          </a>
-        </div>
-
-        <div className="sidebar-section">
-          <span className="sidebar-section-title">گزارش‌ها</span>
-
-          <a href="reports/sales.html" className="sidebar-link">
-            <span>گزارش فروش</span>
-          </a>
-
-          <a href="reports/inventory.html" className="sidebar-link">
-            <span>موجودی انبار</span>
-          </a>
-        </div>
-
-        <div className="sidebar-section">
-          <span className="sidebar-section-title">تنظیمات</span>
-
-          <a href="settings/general.html" className="sidebar-link">
-            <span>عمومی</span>
-          </a>
-
-          <a href="settings/payments.html" className="sidebar-link">
-            <span>پرداخت‌ها</span>
-          </a>
-
-          <a href="settings/shipping.html" className="sidebar-link">
-            <span>حمل‌ونقل</span>
-          </a>
-        </div>
+          return (
+            <Link
+              key={index}
+              href={link.href}
+              className={`sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 ${
+                isActive ? 'sidebar-link-active' : ''
+              }`}
+            >
+              <link.icon />
+              <span className="text-sm font-medium">{link.label}</span>
+            </Link>
+          );
+        })}
       </nav>
     </aside>
   );

@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export default function LoginMobile() {
-  const [step, setStep] = useState("phone"); // وضعیت فعلی: phone یا code
+  const [step, setStep] = useState("phone");
 
   return (
     <form className="space-y-5 animate-fadeIn">

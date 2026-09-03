@@ -23,302 +23,511 @@
       "address": "اصفهان، میدان نقش جهان، کوچه گل‌ها، پلاک ۵",
       "created_at": "2026-08-20",
       "updated_at": "2026-08-22"
-    },
-    {
-      "id": 3,
-      "username": "ali_reza",
-      "password": "aliPass99",
-      "email": "ali.reza@example.com",
-      "role": "customer",
-      "full_name": "علی رضایی",
-      "phone": "09351112233",
-      "address": "مشهد، بلوار وکیل‌آباد، مجتمع تجاری الماس، واحد ۲۰۴",
-      "created_at": "2026-08-15",
-      "updated_at": ""
-    },
-    {
-      "id": 4,
-      "username": "mina_k",
-      "password": "mina123",
-      "email": "mina.k@example.com",
-      "role": "customer",
-      "full_name": "مینا کریمی",
-      "phone": "",
-      "address": "",
-      "created_at": "2026-08-23",
-      "updated_at": ""
-    },
-    {
-      "id": 5,
-      "username": "test_user",
-      "password": "test123",
-      "email": "test@example.com",
-      "role": "customer",
-      "full_name": "کاربر تست",
-      "phone": "",
-      "address": "",
-      "created_at": "2026-08-24",
-      "updated_at": ""
     }
   ],
   "categories": [
-    { "id": 101, "name": "کفش مردانه", "slug": "men-shoes", "parent_id": null },
-    { "id": 102, "name": "کفش زنانه", "slug": "women-shoes", "parent_id": null },
-    { "id": 103, "name": "کتانی ورزشی", "slug": "sport-sneakers", "parent_id": 101 },
-    { "id": 104, "name": "کفش رسمی", "slug": "formal-shoes", "parent_id": 101 },
-    { "id": 105, "name": "پوشاک مردانه", "slug": "men-clothing", "parent_id": null },
-    { "id": 106, "name": "اکسسوری", "slug": "accessories", "parent_id": null },
-    { "id": 107, "name": "جوراب", "slug": "socks", "parent_id": 106 }
+    {
+      "id": 1,
+      "title": "شلوار",
+      "slug": "pants",
+      "image": "/image/product/category/pants-1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "تی شرت",
+      "slug": "t-shirt",
+      "image": "/image/product/category/t-shert.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "کفش",
+      "slug": "shoes",
+      "image": "/image/product/category/shose.jpg"
+    },
+    {
+      "id": 4,
+      "title": "کلاه",
+      "slug": "hat",
+      "image": "/image/product/category/hat.jpeg"
+    }
   ],
   "products": [
     {
       "id": 1,
-      "slug": "white-sport-sneaker",
-      "name": "کتانی اسپرت سفید",
-      "price": 2450000,
+      "slug": "white-simple-tshirt",
+      "title": "تیشرت مردونه سفید ساده",
+      "price": 450000,
       "currency": "تومان",
-      "short_description": "کتانی اسپرت سبک و راحت با طراحی مینیمال.",
-      "full_description": "کتانی اسپرت سفید با طراحی ساده و کاربردی، انتخابی مناسب برای استفاده روزمره است.",
-      "category_id": 103,
+      "short_description": "نخ پنبه صد در صد خنک و راحت.",
+      "full_description": "تی‌شرت یقه گرد ساده، مناسب برای استفاده روزمره و زیر کت.",
+      "category_id": 2,
       "images": [
-        "../../assets/images/products/shoe-01.jpg",
-        "../../assets/images/products/shoe-01-2.jpg"
+        "/image/product/product-ts-p1-001.png",
+        "/image/product/product-ts-p1-002.jpg",
+        "/image/product/product-ts-p1-003.jpg"
       ],
-      "rating": { "stars": 5, "count": 24 },
+      "rating": {
+        "stars": 5,
+        "count": 24
+      },
       "badge": "جدید",
       "options": {
         "colors": [
-          { "name": "سفید", "code": "white", "active": true },
-          { "name": "مشکی", "code": "black", "active": false }
+          {
+            "name": "سفید",
+            "code": "white",
+            "active": true
+          }
         ],
-        "sizes": [38, 39, 40, 41, 42]
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
       },
       "specifications": [
-        { "label": "جنس رویه", "value": "پارچه" },
-        { "label": "زیره", "value": "لاستیک" }
+        {
+          "label": "جنس",
+          "value": "نخ پنبه"
+        }
       ]
     },
     {
       "id": 2,
-      "slug": "black-casual-sneaker",
-      "name": "کتانی مشکی روزمره",
-      "price": 2890000,
+      "slug": "black-baggy-pants",
+      "title": "شلوار نیم بگ مردونه",
+      "price": 1200000,
       "currency": "تومان",
-      "short_description": "طراحی شیک و مقاوم برای استفاده طولانی.",
-      "full_description": "این کتانی با رنگ مشکی جذاب، مناسب قرارهای نیمه‌رسمی و استفاده روزانه است.",
-      "category_id": 103,
-      "images": ["../../assets/images/products/shoe-02.jpg"],
-      "rating": { "stars": 4, "count": 12 },
+      "short_description": "طراحی شیک و آزاد برای استایل خیابانی.",
+      "full_description": "شلوار نیم بگ با جنس کجراه مقاوم، انتخابی عالی برای استایل کژوال.",
+      "category_id": 1,
+      "images": [
+        "/image/product/product-p-p1-001.jpg",
+        "/image/product/product-p-p1-002.jpg",
+        "/image/product/product-p-p1-003.jpg",
+        "/image/product/product-p-p1-004.jpg"
+      ],
+      "rating": {
+        "stars": 4,
+        "count": 12
+      },
       "badge": "پرفروش",
       "options": {
-        "colors": [{ "name": "مشکی", "code": "black", "active": true }],
-        "sizes": [40, 41, 42, 43, 44]
+        "colors": [
+          {
+            "name": "مشکی",
+            "code": "black",
+            "active": true
+          }
+        ],
+        "sizes": [
+          30,
+          32,
+          34,
+          36
+        ]
       },
       "specifications": [
-        { "label": "جنس رویه", "value": "چرم مصنوعی" },
-        { "label": "زیره", "value": "پلی‌اورتان" }
+        {
+          "label": "جنس",
+          "value": "کجراه"
+        }
       ]
     },
     {
       "id": 3,
-      "slug": "gray-white-sneaker",
-      "name": "کتانی سفید و طوسی",
-      "price": 3150000,
+      "slug": "black-nike-style-pants",
+      "title": "شلوار مردونه مشکی طرح نایک",
+      "price": 980000,
       "currency": "تومان",
-      "short_description": "ترکیب رنگ مدرن و کفی طبی.",
-      "full_description": "مناسب برای پیاده‌روی‌های طولانی با کفی ارگونومیک.",
-      "category_id": 103,
-      "images": ["../../assets/images/products/shoe-03.jpg"],
-      "rating": { "stars": 4.5, "count": 8 },
+      "short_description": "راحت و مناسب برای ورزش و پیاده‌روی.",
+      "full_description": "شلوار اسلش با دوخت استاندارد و کشسانی مناسب.",
+      "category_id": 1,
+      "images": [
+        "/image/product/product-p-p2-001.png"
+      ],
+      "rating": {
+        "stars": 4.5,
+        "count": 8
+      },
       "badge": null,
       "options": {
-        "colors": [{ "name": "طوسی/سفید", "code": "gray-white", "active": true }],
-        "sizes": [39, 40, 41, 42]
+        "colors": [
+          {
+            "name": "مشکی",
+            "code": "black",
+            "active": true
+          }
+        ],
+        "sizes": [
+          "M",
+          "L",
+          "XL"
+        ]
       },
       "specifications": [
-        { "label": "ویژگی خاص", "value": "کفی طبی" }
+        {
+          "label": "کاربری",
+          "value": "ورزشی/روزمره"
+        }
       ]
     },
     {
       "id": 4,
       "slug": "running-pro-shoe",
-      "name": "کتانی رانینگ حرفه‌ای",
+      "title": "کفش رانینگ حرفه‌ای",
       "price": 3450000,
       "currency": "تومان",
       "short_description": "مخصوص دویدن و فعالیت‌های سنگین ورزشی.",
-      "full_description": "با تکنولوژی تنفس‌پذیری بالا و جذب ضربه عالی.",
-      "category_id": 103,
-      "images": ["../../assets/images/products/shoe-04.jpg"],
-      "rating": { "stars": 5, "count": 30 },
+      "full_description": "با تکنولوژی تنفس‌پذیری بالا و جذب ضربه عالی برای محافظت از پا.",
+      "category_id": 3,
+      "images": [
+        "/image/product/product-s-p1-001.jpg",
+        "/image/product/product-s-p1-002.jpg",
+        "/image/product/product-s-p1-003.jpg"
+      ],
+      "rating": {
+        "stars": 5,
+        "count": 30
+      },
       "badge": "ویژه ورزشکاران",
       "options": {
         "colors": [
-          { "name": "قرمز/مشکی", "code": "red-black", "active": true },
-          { "name": "آبی/سفید", "code": "blue-white", "active": false }
+          {
+            "name": "قرمز/مشکی",
+            "code": "red-black",
+            "active": true
+          }
         ],
-        "sizes": [40, 41, 42, 43, 44, 45]
+        "sizes": [
+          40,
+          41,
+          42,
+          43,
+          44
+        ]
       },
       "specifications": [
-        { "label": "کاربری", "value": "دویدن" },
-        { "label": "وزن", "value": "سبک" }
+        {
+          "label": "زیره",
+          "value": "لاستیک فشرده"
+        }
       ]
     },
     {
       "id": 5,
-      "slug": "classic-white-leather",
-      "name": "کتانی سفید کلاسیک چرم",
+      "slug": "classic-white-leather-shoe",
+      "title": "کفش چرم سفید کلاسیک",
       "price": 2290000,
       "currency": "تومان",
-      "short_description": "استایل کلاسیک همیشه مد.",
-      "full_description": "ساخته شده از چرم طبیعی با دوخت دستی.",
-      "category_id": 103,
-      "images": ["../../assets/images/products/shoe-05.jpg"],
-      "rating": { "stars": 4, "count": 15 },
+      "short_description": "استایل کلاسیک همیشه مد با چرم طبیعی.",
+      "full_description": "ساخته شده از چرم طبیعی با دوخت دستی، مناسب قرارهای نیمه‌رسمی.",
+      "category_id": 3,
+      "images": [
+        "/image/product/product-s-p2-001.jpg",
+        "/image/product/product-s-p2-002.jpg",
+        "/image/product/product-s-p2-003.jpg"
+      ],
+      "rating": {
+        "stars": 4,
+        "count": 15
+      },
       "badge": null,
       "options": {
-        "colors": [{ "name": "سفید", "code": "white", "active": true }],
-        "sizes": [38, 39, 40, 41, 42, 43]
+        "colors": [
+          {
+            "name": "سفید",
+            "code": "white",
+            "active": true
+          }
+        ],
+        "sizes": [
+          38,
+          39,
+          40,
+          41,
+          42
+        ]
       },
       "specifications": [
-        { "label": "جنس", "value": "چرم طبیعی" }
+        {
+          "label": "جنس",
+          "value": "چرم طبیعی"
+        }
       ]
     },
     {
       "id": 6,
-      "slug": "formal-brown-shoe",
-      "name": "کفش رسمی قهوه‌ای",
+      "slug": "brown-formal-shoe",
+      "title": "کفش رسمی قهوه‌ای",
       "price": 4100000,
       "currency": "تومان",
       "short_description": "مناسب جلسات کاری و مهمانی‌های رسمی.",
-      "full_description": "طراحی ایتالیایی با چرم درجه یک.",
-      "category_id": 104,
-      "images": ["../../assets/images/products/shoe-06.jpg"],
-      "rating": { "stars": 5, "count": 5 },
+      "full_description": "طراحی ایتالیایی با چرم درجه یک و سگک فلزی ظریف.",
+      "category_id": 3,
+      "images": [
+        "/image/product/product-p-p3-001.jpg",
+        "/image/product/product-p-p3-002.jpg",
+        "/image/product/product-p-p3-003.jpg"
+      ],
+      "rating": {
+        "stars": 5,
+        "count": 5
+      },
       "badge": "لوکس",
       "options": {
-        "colors": [{ "name": "قهوه‌ای", "code": "brown", "active": true }],
-        "sizes": [40, 41, 42, 43]
+        "colors": [
+          {
+            "name": "قهوه‌ای",
+            "code": "brown",
+            "active": true
+          }
+        ],
+        "sizes": [
+          40,
+          41,
+          42,
+          43
+        ]
       },
       "specifications": [
-        { "label": "سبک", "value": "رسمی" }
+        {
+          "label": "سبک",
+          "value": "رسمی"
+        }
       ]
     },
     {
       "id": 7,
-      "slug": "women-sport-pink",
-      "name": "کتانی ورزشی زنانه صورتی",
-      "price": 1950000,
+      "slug": "pink-women-tshirt",
+      "title": "تیشرت زنانه صورتی رادمهر",
+      "price": 550000,
       "currency": "تومان",
-      "short_description": "طراحی ظریف و رنگ‌بندی شاد.",
-      "full_description": "مناسب باشگاه و پیاده‌روی بانوان.",
-      "category_id": 102,
-      "images": ["../../assets/images/products/shoe-07.jpg"],
-      "rating": { "stars": 4.5, "count": 18 },
+      "short_description": "طراحی ظریف و رنگ‌بندی شاد دخترانه.",
+      "full_description": "تیشرت نخی خنک با چاپ باکیفیت، مناسب باشگاه و استفاده روزانه.",
+      "category_id": 2,
+      "images": [
+        "/image/product/product-ts-p2-001.png",
+        "/image/product/product-ts-p2-002.jpg",
+        "/image/product/product-ts-p3-003.jpg"
+      ],
+      "rating": {
+        "stars": 4.5,
+        "count": 18
+      },
       "badge": "جدید",
       "options": {
-        "colors": [{ "name": "صورتی", "code": "pink", "active": true }],
-        "sizes": [36, 37, 38, 39, 40]
+        "colors": [
+          {
+            "name": "صورتی",
+            "code": "pink",
+            "active": true
+          }
+        ],
+        "sizes": [
+          "S",
+          "M",
+          "L"
+        ]
       },
       "specifications": [
-        { "label": "جنس", "value": "مش" }
+        {
+          "label": "جنس",
+          "value": "نخ پنبه"
+        }
       ]
     },
     {
       "id": 8,
-      "slug": "cotton-tshirt-white",
-      "name": "تی‌شرت نخی سفید",
-      "price": 450000,
+      "slug": "moodrich-tshirt",
+      "title": "تیشرت مردونه moodrich",
+      "price": 650000,
       "currency": "تومان",
-      "short_description": "نخ پنبه صد در صد خنک.",
-      "full_description": "تی‌شرت یقه گرد ساده، مناسب زیر کت یا استفاده تنها.",
-      "category_id": 105,
-      "images": ["../../assets/images/products/cloth-01.jpg"],
-      "rating": { "stars": 4, "count": 40 },
+      "short_description": "برند معتبر با کیفیت دوخت بالا.",
+      "full_description": "تی‌شرت یقه گرد ساده از برند مودریچ، مناسب استایل اسپرت.",
+      "category_id": 2,
+      "images": [
+        "/image/product/product-ts-p3-001.png",
+        "/image/product/product-ts-p3-002.png"
+      ],
+      "rating": {
+        "stars": 4,
+        "count": 40
+      },
       "badge": null,
       "options": {
-        "colors": [{ "name": "سفید", "code": "white", "active": true }],
-        "sizes": ["S", "M", "L", "XL"]
+        "colors": [
+          {
+            "name": "سفید",
+            "code": "white",
+            "active": true
+          }
+        ],
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
       },
       "specifications": [
-        { "label": "جنس", "value": "نخ پنبه" }
+        {
+          "label": "برند",
+          "value": "Moodrich"
+        }
       ]
     },
     {
       "id": 9,
-      "slug": "denim-jacket-blue",
-      "name": "کت جین آبی",
-      "price": 1800000,
+      "slug": "perfect-sport-hat",
+      "title": "کلاه اسپرت perfect",
+      "price": 350000,
       "currency": "تومان",
-      "short_description": "استایل کژوال و جوان‌پسند.",
-      "full_description": "کت جین با شست‌وشوی سنگین و دکمه‌های فلزی.",
-      "category_id": 105,
-      "images": ["../../assets/images/products/cloth-02.jpg"],
-      "rating": { "stars": 4.5, "count": 10 },
+      "short_description": "محافظت از سر در برابر آفتاب با استایل جوان‌پسند.",
+      "full_description": "کلاه نقاب‌دار با قابلیت تنظیم سایز و جنس نخ خنک.",
+      "category_id": 4,
+      "images": [
+        "/image/product/product-h-p1-001.jpg",
+        "/image/product/product-h-p1-002.jpg",
+        "/image/product/product-h-p1-003.jpg"
+      ],
+      "rating": {
+        "stars": 4.5,
+        "count": 10
+      },
       "badge": "تخفیف دار",
       "options": {
-        "colors": [{ "name": "آبی روشن", "code": "light-blue", "active": true }],
-        "sizes": ["M", "L", "XL"]
+        "colors": [
+          {
+            "name": "آبی روشن",
+            "code": "light-blue",
+            "active": true
+          }
+        ],
+        "sizes": [
+          "Free Size"
+        ]
       },
       "specifications": [
-        { "label": "فصل", "value": "پاییز/بهار" }
+        {
+          "label": "فصل",
+          "value": "بهار/تابستان"
+        }
       ]
     },
     {
       "id": 10,
-      "slug": "sport-socks-pack",
-      "name": "بسته ۳ تایی جوراب ورزشی",
-      "price": 120000,
+      "slug": "ny-black-hat",
+      "title": "کلاه مشکی NY",
+      "price": 420000,
       "currency": "تومان",
-      "short_description": "ضد بو و تعریق.",
-      "full_description": "جوراب‌های ساق‌دار مناسب ورزش.",
-      "category_id": 107,
-      "images": ["../../assets/images/products/acc-01.jpg"],
-      "rating": { "stars": 5, "count": 50 },
-      "badge": "اقتصادی",
-      "options": {
-        "colors": [{ "name": "مشکی/سفید/طوسی", "code": "mix", "active": true }],
-        "sizes": ["40-44"]
+      "short_description": "طرح کلاسیک نیویورک یانکز.",
+      "full_description": "کلاه بیسبالی با لوگوی برجسته NY، مناسب استایل هیپ‌هاپ و خیابانی.",
+      "category_id": 4,
+      "images": [
+        "/image/product/product-h-p2-001.jpg",
+        "/image/product/product-h-p2-002.jpg",
+        "/image/product/product-h-p2-003.jpg"
+      ],
+      "rating": {
+        "stars": 5,
+        "count": 50
       },
-      "specifications": []
+      "badge": "محبوب",
+      "options": {
+        "colors": [
+          {
+            "name": "مشکی",
+            "code": "black",
+            "active": true
+          }
+        ],
+        "sizes": [
+          "Free Size"
+        ]
+      },
+      "specifications": [
+        {
+          "label": "سبک",
+          "value": "بیسبالی"
+        }
+      ]
     },
     {
       "id": 11,
-      "slug": "leather-belt-black",
-      "name": "کمربند چرم مشکی",
-      "price": 650000,
+      "slug": "perfect-baseball-hat",
+      "title": "کلاه بیسبالی perfect",
+      "price": 380000,
       "currency": "تومان",
-      "short_description": "سگک فلزی ضد زنگ.",
-      "full_description": "کمربند رسمی با چرم طبیعی گاوی.",
-      "category_id": 106,
-      "images": ["../../assets/images/products/acc-02.jpg"],
-      "rating": { "stars": 4, "count": 7 },
+      "short_description": "کیفیت عالی و دوخت تمیز.",
+      "full_description": "کلاه نقاب‌دار ساده با رنگ‌بندی متنوع، مناسب برای همه سنین.",
+      "category_id": 4,
+      "images": [
+        "/image/product/product-h-p3-001.jpg",
+        "/image/product/product-h-p3-002.jpg",
+        "/image/product/product-h-p3-003.jpg"
+      ],
+      "rating": {
+        "stars": 4,
+        "count": 7
+      },
       "badge": null,
       "options": {
-        "colors": [{ "name": "مشکی", "code": "black", "active": true }],
-        "sizes": ["90cm", "100cm", "110cm"]
+        "colors": [
+          {
+            "name": "مشکی",
+            "code": "black",
+            "active": true
+          }
+        ],
+        "sizes": [
+          "Free Size"
+        ]
       },
       "specifications": [
-        { "label": "جنس سگک", "value": "استیل" }
+        {
+          "label": "جنس",
+          "value": "کتان"
+        }
       ]
     },
     {
       "id": 12,
-      "slug": "canvas-backpack-gray",
-      "name": "کوله پشتی کanvas طوسی",
+      "slug": "gray-canvas-backpack",
+      "title": "کوله پشتی canvas طوسی",
       "price": 980000,
       "currency": "تومان",
       "short_description": "جادار و مقاوم برای دانشگاه و سفر.",
-      "full_description": "دارای محفظه لپ‌تاپ و جیب‌های متعدد.",
-      "category_id": 106,
-      "images": ["../../assets/images/products/acc-03.jpg"],
-      "rating": { "stars": 4.5, "count": 22 },
-      "badge": "محبوب",
+      "full_description": "دارای محفظه لپ‌تاپ و جیب‌های متعدد برای نظم‌دهی وسایل.",
+      "category_id": 4,
+      "images": [
+        "/image/product/product-s-p3-001.jpg",
+        "/image/product/product-s-p3-002.jpg",
+        "/image/product/product-s-p3-003.jpg"
+      ],
+      "rating": {
+        "stars": 4.5,
+        "count": 22
+      },
+      "badge": "اقتصادی",
       "options": {
-        "colors": [{ "name": "طوسی", "code": "gray", "active": true }],
-        "sizes": ["Free Size"]
+        "colors": [
+          {
+            "name": "طوسی",
+            "code": "gray",
+            "active": true
+          }
+        ],
+        "sizes": [
+          "Free Size"
+        ]
       },
       "specifications": [
-        { "label": "ظرفیت", "value": "20 لیتر" }
+        {
+          "label": "ظرفیت",
+          "value": "20 لیتر"
+        }
       ]
     }
   ]
